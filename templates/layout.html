@@ -9,9 +9,9 @@
 
         <style>
             body{
-                padding-top:60px;
+                padding-top: 60px;
             }
-            .tr-head{background-color: #dff0d8;}
+            .tr-head{background: #dff0d8;}
         </style>
         <link rel="stylesheet" href="../static/bootstrap/css/bootstrap-responsive.min.css">
     </head>
@@ -23,8 +23,8 @@
                     <a class="brand" href="">
                         UTL-IDGS
                     </a>
-                    <ul>
-                        <li class="active">
+                    <ul class="nav">
+                        <li>
                             <a href="">
                                 <i class="icon-home icon-white"></i>
                                 Inicio
@@ -33,13 +33,13 @@
                         <li>
                             <a href="">
                                 <i class="icon-user icon-white"></i>
-                                Usuario
+                                Usuarios
                             </a>
                         </li>
                         <li>
                             <a href="">
                                 <i class="icon-user icon-white"></i>
-                                Alumno
+                                Alumnos
                             </a>
                         </li>
                     </ul>
@@ -48,11 +48,10 @@
         </div>
 
         <div class="container">
-            
-        </div>
-        {% block content %}
+            {% block content %}
         
-        {% endblock %}
-
+            {% endblock %}
+        </div>
+        
     </body>
 </html>
