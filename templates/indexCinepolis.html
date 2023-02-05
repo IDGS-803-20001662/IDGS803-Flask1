@@ -1,0 +1,44 @@
+{% extends "layoutCinepolis.html" %}
+
+{% block content %}
+    <div class="container">
+        <div class="row">
+            <h1 class="text-white"><i>Entradas</i></h1>
+            <form class="form-horizontal" action="/pagocinepolis" method="post">
+                <div class="control-group">
+                    <label for="" class="control-label">Nombre:</label>
+                    <div class="controls">
+                        <input type="text" name="txtNombre" value="">
+                    </div>
+                </div>
+                <div class="control-group">
+                    <label for="" class="control-label">Cantidad de Compradores:</label>
+                    <div class="controls">
+                        <input type="text" name="txtCantidad" value="">
+                    </div>
+                </div>
+                <div class="control-group">
+                    <label for="" class="control-label">Tarjeta de CINECO:</label><br><br>
+                    <div>
+                        <label>SI</label> <input type="radio" name="rbtTarjeta" value="SI"><br><br>
+                        <label>NO</label> <input type="radio" name="rbtTarjeta" value="NO">
+                    </div> 
+                </div>
+                <div class="control-group">
+                    <label for="" class="control-label">Cantidad de Boletos:</label>
+                    <div class="controls">
+                        <input type="text" name="txtBoletos" value="">
+                    </div>
+                </div>
+                <div class="control-group">
+                    <div class="controls">
+                        <button type="submit" class="btn btn-default btn-primary">
+                            <i class="icon-book icon-white"></i> Generar ticket
+                        </button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+
+{% endblock %}
